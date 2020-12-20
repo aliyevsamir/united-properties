@@ -1,0 +1,72 @@
+.preferences {
+  margin-top: 30px;
+  flex: auto;
+
+  &__header {
+    font-family: Montserrat Alternates;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  &__choices {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+
+    .choice {
+      border: 1.5px solid #d5d9dc;
+      box-sizing: border-box;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.02em;
+
+      &.selected,
+      &.selected span {
+        border-color: var(--main-blue-color);
+      }
+
+      &.selected span {
+        background: var(--main-blue-color);
+      }
+
+      &.selected span::after {
+        content: url(../../assets/svgs/vector.svg);
+      }
+
+      &.selected p {
+        color: var(--main-blue-color);
+      }
+
+      /* Neutural/Black */
+      cursor: pointer;
+      color: #031106;
+
+      span {
+        width: 16px;
+        height: 16px;
+        border: 1.5px solid #dddddd;
+        border-radius: 2px;
+        margin-bottom: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      input {
+        display: none;
+      }
+    }
+  }
+}

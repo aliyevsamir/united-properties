@@ -1,0 +1,11 @@
+.main {
+  width: 63%;
+  height: 100vh;
+
+  &-container {
+    padding: 36px 117px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}

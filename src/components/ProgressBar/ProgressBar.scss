@@ -1,0 +1,60 @@
+.progressbar {
+  margin-top: 200px;
+
+  &__level {
+    display: flex;
+    color: rgba(255, 255, 255, 0.5);
+
+    &--square {
+      border: 3px solid rgba(255, 255, 255, 0.5);
+      border-radius: 4px;
+      padding: 10px;
+      position: relative;
+
+      &-step {
+        display: block;
+        width: 4px;
+        height: 9px;
+        border-radius: 1px;
+        background-color: rgba(255, 255, 255, 0.5);
+        margin: 9px auto;
+      }
+    }
+
+    &--label {
+      font-family: 'Montserrat Alternates', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      margin-left: 14px;
+    }
+
+    &.active {
+      .progressbar__level {
+        &--label {
+          color: #fff !important;
+        }
+
+        &--square {
+          border-color: #fff !important;
+        }
+
+        &--square::after {
+          content: '';
+          width: 12px;
+          height: 12px;
+          border-radius: 2px;
+          background-color: #fff;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          position: absolute;
+        }
+
+        &--square-step {
+          background-color: #fff !important;
+        }
+      }
+    }
+  }
+}

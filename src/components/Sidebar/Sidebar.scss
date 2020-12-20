@@ -1,0 +1,13 @@
+.sidebar {
+  background-color: var(--main-blue-color);
+  width: 36%;
+  min-height: 100vh;
+
+  &-container {
+    padding: 36px 74px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+}

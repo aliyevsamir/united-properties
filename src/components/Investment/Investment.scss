@@ -1,0 +1,145 @@
+.investment {
+  display: flex;
+  flex-direction: column;
+  padding-top: 46px;
+  flex: auto;
+
+  &__question {
+    font-family: Montserrat Alternates;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-bottom: 20px;
+  }
+
+  &__selections {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    div {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      input {
+        border: none;
+        outline: none;
+        border-bottom: 2px solid #d5d9dc;
+        width: 100%;
+        font-family: Montserrat;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        text-align: left;
+      }
+
+      input:focus {
+        border-color: var(--main-blue-color);
+      }
+
+      input:focus ~ label {
+        color: var(--main-blue-color);
+      }
+
+      label {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--main-grey-text-color);
+        cursor: pointer;
+        margin-bottom: 5px;
+        order: -1;
+      }
+    }
+
+    div:first-child {
+      margin-right: 20px;
+    }
+  }
+
+  .radio-group {
+    display: flex;
+
+    div:first-child {
+      margin-right: 20px;
+    }
+
+    div {
+      width: 136px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+
+      input {
+        display: none;
+      }
+
+      input:checked ~ label {
+        border-color: var(--main-blue-color);
+      }
+
+      input:checked ~ label span::after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        background: var(--main-blue-color);
+        border-radius: 50%;
+      }
+
+      input:checked ~ label span {
+        border-color: var(--main-blue-color);
+      }
+
+      input:checked ~ label p {
+        color: var(--main-blue-color);
+      }
+
+      label {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        border: 2px solid var(--main-grey-text-color);
+        box-shadow: 0px 0px 56px rgba(0, 133, 255, 0.05);
+        border-radius: 8px;
+        cursor: pointer;
+
+        span {
+          width: 20px;
+          height: 20px;
+          background: #f6fbff;
+          margin-left: 10px;
+          border: 2px solid var(--main-grey-text-color);
+          border-radius: 50%;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        p {
+          font-family: Montserrat;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 24px;
+          letter-spacing: 0.02em;
+          padding-left: 16px;
+          display: block;
+          cursor: pointer;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}

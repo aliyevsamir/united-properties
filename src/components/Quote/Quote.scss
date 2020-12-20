@@ -1,0 +1,50 @@
+.quote {
+  width: 368px;
+  height: 200px;
+  padding: 48px 40px 32px;
+  background-color: #fff;
+  margin-top: 100px;
+  position: relative;
+  box-shadow: 0px 8px 20px rgba(3, 17, 6, 0.03);
+  border-radius: 4px;
+
+  .quotation-mark-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 16px 12px 56px rgba(11, 29, 46, 0.15);
+    border-radius: 3px;
+    z-index: 1;
+  }
+
+  .quote-triangle {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &__content {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--main-grey-text-color);
+  }
+
+  &__author {
+    margin-top: 10px;
+    &--name {
+      font-family: 'Montserrat Alternas', sans-serif;
+      font-weight: 600;
+      color: #07111b;
+    }
+
+    &--employment {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      color: var(--main-grey-text-color);
+    }
+  }
+}

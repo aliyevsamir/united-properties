@@ -1,0 +1,25 @@
+.title {
+  margin-top: 50px;
+
+  &__header {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #0b1d2e;
+  }
+
+  &__description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--main-grey-text-color);
+  }
+}
